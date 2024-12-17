@@ -46,3 +46,21 @@ impl Flight {
         println!("{:?}", self);
     }
 }
+
+fn main() {
+    let mut fs18 = Flight::new("Berlin".to_string(), "Paris".to_string(), 100.0, 220);
+    fs18.show_flight_info();
+
+    fs18.change_destination("London".to_string())
+        .increase_price();
+    fs18.show_route();
+    fs18.show_flight_info();
+
+    let fs19 = Flight {
+        origin: "Egypt".to_string(),
+        destination: "Germany".to_owned(),
+        ..fs18
+    };
+    fs19.show_flight_info();
+    fs18.show_flight_info();
+}
