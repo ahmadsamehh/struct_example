@@ -28,25 +28,3 @@ Guidelines for contributing to the project:
 2. Create a new branch for your feature
 3. Make your changes
 4. Submit a pull request
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Error Handling
-
-The code uses Rust's built-in error handling mechanisms, including:
-
-* `Result` types for operations that may fail
-* `Option` types for values that may be absent
-* Panic for unrecoverable errors
-
-## Testing
-
-To run the tests for this project, use the following command:
-
-
-cargo test
-
-
-This will run all unit tests and integration tests in the project.
